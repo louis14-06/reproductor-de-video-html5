@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>reproductor html5</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/SH20RAJ/Sopplayer/mooviejs/css/moovie.min.css">
+</head>
+<body>
+    <video id="example1" poster="https://imgs.search.brave.com/kg2n9WufLhAaUOtSmOBw1fdWbDAK2ULgjAqnaVO0rP4/rs:fit:575:425:1/g:ce/aHR0cDovL2kuZW1l/emV0YS5jb20vd2Vi/bG9nL3JlcHJvZHVj/dG9yZXMtdmlkZW8v/Z29tLXBsYXllci5w/bmc" controls>
+        <source src="ESCRIBIR ENLACE DE VIDEO" type="video/mp4">
+        <track kind="captions" label="English" srclang="en" src="https://cdn.jsdelivr.net/gh/BMSVieira/moovie.js@main/demo-template/subtitles/en.vtt">
+        Your browser does not support the video tag.
+      </video>
+
+      <script src="https://cdn.jsdelivr.net/gh/SH20RAJ/Sopplayer/mooviejs/js/moovie.min.js"></script>
+
+      <script>
+        document.addEventListener("DOMContentLoaded", function() {
+           video1 = new Moovie({
+              selector: "#example1",
+              config: {
+                  controls : {
+                      playtime : true,
+                      mute : true,
+                      volume : true,
+                      subtitles : true,
+                      config : true,
+                      fullscreen : true,
+                      submenuCaptions : true,
+                      submenuOffset : true,
+                      submenuSpeed : true,
+                      allowLocalSubtitles : true
+                  }
+              }
+           });
+        });
+        </script>
+    
+</body>
+</html>
